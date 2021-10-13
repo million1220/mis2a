@@ -20,6 +20,26 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script>
+	$(document).ready(function(){
+		$("#I").hover(function(){
+			$("#PICTURE").attr("src","family.jpg");
+		});
+
+		$("#PU").hover(function(){
+			$("#PICTURE").attr("src","pu.jpg");
+		});
+
+		$("#CSIM").hover(function(){
+			$("#PICTURE").attr("src","pucsim.jpg");
+		});
+
+		$("#PICTURE").click(function(){
+			$("#PICTURE").hide();
+			$("#PICTURE").fadeIn("slow")
+		});
+	});
+</script>
 
 
 
@@ -46,17 +66,17 @@
 
         	<nav>
 				<h1><a href="http://www1.pu.edu.tw/~tcyang"
-					class="class="text-reset text-decoration-none text-white bg-primary"
+					class="class="text-reset text-decoration-none text-white bg-primary"target="_blank" id="I"
 "> 楊子青 (Tzyy-Ching Yang) </a></h1>
 				<h2><a href="http://www.pu.edu.tw/"
-					class="class="text-reset text-decoration-none text-white bg-primary"
+					class="class="text-reset text-decoration-none text-white bg-primary"id="PU"
 ">靜宜大學</a>
 				/<a href="https://csim.pu.edu.tw/"
-				class="class="text-reset text-decoration-none text-white bg-primary"
+				class="class="text-reset text-decoration-none text-white bg-primary"id="CSIM"
 "> 資訊管理學系</a></h2>
 			</nav>
 
-			<img src="family.jpg" alt="照片" class="img-fluid rounded-circle"
+			<img src="family.jpg" alt="照片" class="img-fluid rounded-circle"id="PICTURE"
 >
 			<br><br><br>
 
